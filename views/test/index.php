@@ -19,10 +19,10 @@ use yii\widgets\Pjax;
         /** Виджеты: */ ?>
 
 <!--        Выводим информацию из данного виджета: Её можно выводить и в виде и в Шаблоне (views/layouts/test)-->
-        <?//= \app\components\HelloWidget::widget(['name' => 'Nick']) ?>
+        <?//= \app\components\HelloWidget::widget(['name' => 'Name']) ?>
 
-        <?php \app\components\HelloWidget::begin(['name' => 'Nick']) ?>
-        <h3>Контент Виджета</h3>
+        <?php \app\components\HelloWidget::begin(['name' => 'Name']) ?>
+        <h3>Далее можно отобразить какой-нибдуь Контент Виджета</h3>
         <?php \app\components\HelloWidget::end() ?>
 
         <!--        Закомментирум флешки и вместо этого воспользуемся виджетом Alert и его методом widget()-->

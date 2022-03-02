@@ -46,6 +46,7 @@ class TestController extends AppController
 //        Метатеги можно задавать как в контроллере, тaк и в виде.
         $this->view->registerMetaTag(['name' => 'description', 'content' => 'мета-описание...'], 'description');
 
+        /*Работа с виджетами*/
 //        $alert приходит Гет запросом (/test?alert=info) и в зависимости от значения выдаст соотв. флешку
         switch ($alert) {
             case 'error':
@@ -54,14 +55,14 @@ class TestController extends AppController
             case 'success':
                 \Yii::$app->session->setFlash('success', 'OK');
                 break;
-            case 'info':
-                \Yii::$app->session->setFlash('info', 'information');
+            case 'danger':
+                \Yii::$app->session->setFlash('danger', 'danger');
                 break;
             case 'warning':
                 \Yii::$app->session->setFlash('warning', 'Warning');
                 break;
             default:
-                \Yii::$app->session->setFlash('danger', 'Danger');
+                \Yii::$app->session->setFlash('info', 'Проверяем работу виджета (дефолтное значение)');
         }
 
 

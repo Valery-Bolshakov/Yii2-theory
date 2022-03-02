@@ -23,7 +23,6 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin([
         'id' => 'my-form',
-        'enableAjaxValidation' => true,
         'options' => [
             'class' => 'form-horizontal',  // свойство bootstrap разметки
         ],
